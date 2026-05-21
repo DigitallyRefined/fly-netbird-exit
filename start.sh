@@ -2,6 +2,9 @@
 
 echo 'Starting up...'
 
+echo "fly-$PRIMARY_REGION" > /etc/hostname
+hostname -F /etc/hostname
+
 # Start NetBird in the background
 netbird-entrypoint.sh &
 NETBIRD_PID=$!
