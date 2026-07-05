@@ -1,4 +1,4 @@
-FROM netbirdio/netbird:0.74.1
+FROM netbirdio/netbird:0.74.2
 
 RUN apk add --no-cache jq
 
